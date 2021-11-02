@@ -19,11 +19,25 @@ import java.util.concurrent.atomic.AtomicIntegerArray;
 
 public class Test 
 { 
+	public static void reverse(String s) 
+	{
+		if(s.length()<=0 || s==null)
+		{
+			System.out.println(s);
+		}
+		else 
+		{
+			System.out.print(s.charAt(s.length()-1));
+			reverse(s.substring(0, s.length()-1));
+		}
+	}
+		
 	 public static void main(String[] args) 
 	 {
-		for(int i=1;i<=4;i++) 
-		{
-			for(int j=)
-		}
+		 String s = "this is how";
+		 reverse(s);
+		 
+	 
 	 }
+	 
 } 
