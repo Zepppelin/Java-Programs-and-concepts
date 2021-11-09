@@ -16,8 +16,7 @@ public class Factorial2
 			if(num>=1)
 			{
 				fact=fact*num;
-				num--;
-				fact(num);
+				fact(num-1);
 			}
 		}
 		return fact;

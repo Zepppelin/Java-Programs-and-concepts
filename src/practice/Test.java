@@ -1,43 +1,31 @@
 package practice;
-import java.util.*;
+
 import java.util.Arrays;
-import java.util.Collection;
-import java.util.Enumeration;
-import java.util.HashMap;
 import java.util.HashSet;
-import java.util.IdentityHashMap;
 import java.util.LinkedHashMap;
-import java.util.LinkedList;
-import java.util.List;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Scanner;
 import java.util.Set;
-import java.util.Vector;
-import java.util.WeakHashMap;
-import java.util.concurrent.atomic.AtomicIntegerArray;
 
 public class Test 
-{ 
-	public static void reverse(String s) 
+{
+	public static void main(String[] args)
 	{
-		if(s.length()<=0 || s==null)
+		String str = "java is a programming lauguage";
+		String[] arr=str.split(" ");
+		int i=0;
+		while(i<arr.length)
 		{
-			System.out.println(s);
+			if(arr[i].length()>arr[i+1].length()) 
+			{
+				String temp=arr[i+1];
+				arr[i+1]=arr[i];
+				arr[i]=temp;
+				i++;
+			}
+			
 		}
-		else 
-		{
-			System.out.print(s.charAt(s.length()-1));
-			reverse(s.substring(0, s.length()-1));
-		}
+		System.out.println(arr[arr.length-2]);
 	}
-		
-	 public static void main(String[] args) 
-	 {
-		 String s = "this is how";
-		 reverse(s);
-		 
-	 
-	 }
-	 
-} 
+}
