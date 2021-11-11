@@ -8,7 +8,7 @@ public class Pattern3
 		{
 			for(int j=num;j>=1;j--)
 			{
-				if(i==j)
+				if(j==i)
 				{
 					System.out.print("*");
 				}

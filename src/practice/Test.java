@@ -1,31 +1,42 @@
 package practice;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.HashSet;
+import java.util.IdentityHashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Scanner;
 import java.util.Set;
+import java.util.WeakHashMap;
 
 public class Test 
 {
 	public static void main(String[] args)
 	{
-		String str = "java is a programming lauguage";
-		String[] arr=str.split(" ");
-		int i=0;
-		while(i<arr.length)
+	
+		for(int i=1;i<=5;i++) 
 		{
-			if(arr[i].length()>arr[i+1].length()) 
+			for(int j=1;j<=i;j++) 
 			{
-				String temp=arr[i+1];
-				arr[i+1]=arr[i];
-				arr[i]=temp;
-				i++;
+				System.out.print("*");
 			}
 			
+			System.out.println();
 		}
-		System.out.println(arr[arr.length-2]);
+		for(int i=1;i<=4;i++) 
+		{
+			for(int j=1;j<=5-i;j++) 
+			{
+				System.out.print("*");
+			}
+			
+			System.out.println();
+		}
+			
+		
+		
 	}
 }
