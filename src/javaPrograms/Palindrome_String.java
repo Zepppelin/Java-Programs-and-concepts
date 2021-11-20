@@ -26,3 +26,36 @@ public class Palindrome_String {
 	
 	
 }
+
+//public class Test 
+//{
+//	
+//	public static void main(String[] args)
+//	{ 
+//		String s = "madam";
+//		int i=0;
+//		int j=s.length()-1;
+//		boolean status=true;
+//		while(i<=j)
+//		{
+//			if(s.charAt(i)==s.charAt(j)) 
+//			{
+//				status=true;
+//				i++;
+//				j--;
+//			}
+//			else
+//			{
+//				status=false;
+//				break;
+//			}
+//		}
+//		if(status==true) {
+//			System.out.println("palindrome");
+//		}
+//		else {
+//			System.out.println("not palindrome");
+//		}
+//	}
+//}
+

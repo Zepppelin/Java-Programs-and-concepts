@@ -1,20 +1,34 @@
 package practice;
 
-interface Bank
+class Bank 
 {
-	public abstract int getRateOfInterest();
-
-}
-
-class ICICI implements Bank
-{
-	
-	public int getRateOfInterest() 
+	public int getRateOfInterest()
 	{
-		return 8;
-	}
+		return 0;
 		
+	}
 }
 
+class ICICI extends Bank
+{
+	public int getRateOfInterest()
+	{
+		return 10;
+	}
+}
 
+class SBI extends Bank
+{
+	public int getRateOfInterest()
+	{
+		return 11;
+	}
+}
 
+class AXIS extends Bank
+{
+	public int getRateOfInterest()
+	{
+		return 12;
+	}
+}

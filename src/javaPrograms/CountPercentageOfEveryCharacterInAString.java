@@ -30,6 +30,7 @@ public class CountPercentageOfEveryCharacterInAString {
 				otherCharactersCount++;
 			}
 		}
+	
 		System.out.println("Upper Case Percentage is:"+ " "+(double)(upperCaseCount*100)/totalCharCount);
 		System.out.println("lower Case Percentage is:"+ " "+(double)(lowerCaseCount*100)/totalCharCount);
 		System.out.println("Digits Percentage is:"+ " "+(double)(DigitsCount*100)/totalCharCount);
