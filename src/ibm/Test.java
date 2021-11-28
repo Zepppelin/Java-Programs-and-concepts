@@ -7,20 +7,16 @@ import java.util.Set;
 
 public class Test 
 {
-	
 	public static void main(String[] args) 
 	{
-		int num = 1004;
-		int sum=0;
-		while(num>0) 
-		{
-			int  r = num%10;
-			if(r!=0) 
-			{
-				sum = sum+r;
-			}
-		}
-
+		String a ="ibm";
+		String b ="interview";
+		
+		a=a+b;
+		b=a.substring(0, a.length()-b.length());
+		a=a.substring(b.length());
+		System.out.println(a);
+		System.out.println(b);
 	}
 
 }

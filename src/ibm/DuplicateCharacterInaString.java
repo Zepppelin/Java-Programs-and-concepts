@@ -10,9 +10,9 @@ public class DuplicateCharacterInaString
 
 	public static void main(String[] args)
 	{
-		String string = "interview";
+		String s ="interview";
 		StringBuffer sb = new StringBuffer();
-		char[] arr=string.toCharArray();
+		char[] arr=s.toCharArray();
 		Map<Character,Integer> map = new HashMap<Character,Integer>();
 		for(Character ch : arr ) 
 		{
