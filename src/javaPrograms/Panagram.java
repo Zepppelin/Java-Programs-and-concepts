@@ -21,7 +21,7 @@ public class Panagram
 	    	  }
 	    	  arr[index]=true;
 	      }
-	      for(int i=0;i<25;i++) 
+	      for(int i=0;i<26;i++) 
 	      {
 	    	  if(arr[i]==true) 
 	    	  {
