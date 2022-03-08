@@ -1,7 +1,7 @@
 package javaPrograms;
 
-public class CountPercentageOfEveryCharacterInAString {
-
+public class CountPercentageOfEveryCharacterInAString 
+{
 	public static void main(String[] args) 
 	{
 		int upperCaseCount=0;

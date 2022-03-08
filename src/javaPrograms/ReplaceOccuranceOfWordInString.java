@@ -1,13 +1,13 @@
 package javaPrograms;
 
-public class ReplaceOccuranceOfWordInString {
+public class ReplaceOccuranceOfWordInString 
+{
 
 	public static void main(String[] args) 
 	{
-		String str = "how to do in java provides java tutorials";
-		str=str.replaceAll("java", "scala");
-		System.out.println(str);
-
+		String s = "how to do java with java more";
+		s=s.replaceAll("java", "scala");
+		System.out.println(s);
 	}
 
 }

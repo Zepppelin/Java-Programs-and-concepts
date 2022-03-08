@@ -9,10 +9,12 @@ import java.util.Map.Entry;
 public class StringgContainsUniqueCharacter 
 {
 
-	public static void stringContainsUniqueCharacter(String str) 
+	public static boolean stringContainsUniqueCharacter(String str) 
 	{
+		
 		char[] arr=str.toCharArray();
 		Map<Character,Integer> m = new HashMap<Character,Integer>();
+		boolean status=false;
 		for(Character c:arr)
 		{
 			Integer count=m.get(c);
@@ -25,35 +27,39 @@ public class StringgContainsUniqueCharacter
 				m.put(c, ++count);
 			}
 		}
-		boolean status=true;
+		
 		Set<Entry<Character,Integer>> es=m.entrySet();
 		for(Entry<Character,Integer> entry :es)
 		{
-			if(entry.getValue()>1) 
+			if(entry.getValue()==1) 
 			{
-				status=false;
-				break;
+				status=true;
+			    
 			}
            else
 			{
-				status =true;
+        	   status =false;
+				break;
 			}
 			
 	     }
-		if(status==false) 
-		{
-			System.out.println(str+" "+"not contains unique characters");
-		}
-		else if(status==true)
-		{
-			System.out.println(str+" "+"contains unique characters");
-		}
+		return status;
+//		if(status==false) 
+//		{
+//			System.out.println(str+" "+"not contains unique characters");
+//		}
+//		else if(status==true)
+//		{
+//			System.out.println(str+" "+"contains unique characters");
+//		}
 		
 	}
 	public static void main(String[] args)
 	{
-		stringContainsUniqueCharacter("keep");
-		stringContainsUniqueCharacter("world");
+		boolean ans=stringContainsUniqueCharacter("keep");
+		boolean ans1=stringContainsUniqueCharacter("world");
+		System.out.println(ans);
+		System.out.println(ans1);
 	}
 }
 

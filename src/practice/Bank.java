@@ -1,33 +1,29 @@
 package practice;
 
-class Bank 
+public abstract class Bank 
 {
-	public int getRateOfInterest()
-	{
-		return 0;
-		
-	}
+   public abstract int getRateOfInterest();
 }
 
 class ICICI extends Bank
 {
-	public int getRateOfInterest()
+	public int getRateOfInterest() 
 	{
 		return 10;
 	}
 }
 
-class SBI extends Bank
+class AXIS extends Bank
 {
-	public int getRateOfInterest()
+	public int getRateOfInterest() 
 	{
 		return 11;
 	}
 }
 
-class AXIS extends Bank
+class SBI extends Bank
 {
-	public int getRateOfInterest()
+	public int getRateOfInterest() 
 	{
 		return 12;
 	}

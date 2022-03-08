@@ -1,20 +1,17 @@
 package practice;
 
-import java.util.Scanner;
-
-public class Main
+public class Main 
 {
 
-	public static void main(String[] args) 
+	public static void main(String[] args)
 	{
+		Bank a = new ICICI();
+		Bank b = new AXIS();
+		Bank c = new SBI();
 		
-		ICICI i = new ICICI();
-		SBI s = new SBI();
-		AXIS a = new AXIS();
-		
-		System.out.println(i.getRateOfInterest());
-		System.out.println(s.getRateOfInterest());
 		System.out.println(a.getRateOfInterest());
+		System.out.println(b.getRateOfInterest());
+		System.out.println(c.getRateOfInterest());
 		
 
 	}

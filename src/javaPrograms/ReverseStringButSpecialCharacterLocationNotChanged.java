@@ -28,6 +28,7 @@ public class ReverseStringButSpecialCharacterLocationNotChanged
 				j--;
 			}
 		}
+		//return String.valueOf(arr);
 		String str = new String(arr);
 		System.out.println(str);
 	}

@@ -1,4 +1,5 @@
 package javaPrograms;
+import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -8,19 +9,19 @@ public class IndexOfFirstNonRepCharInAxting
 {
 	public static void main(String[] args) 
 	{
-		String s="GeeksforGeeks";
+		String s="ajeetkumar";
 		char[] arr=s.toCharArray();
-		Map<Character,Integer> m = new LinkedHashMap<Character,Integer>();
-		for(Character ch:arr) 
+		Map<Character,Integer> m = new HashMap<Character,Integer>();
+		for(Character c:arr) 
 		{
-			Integer count=m.get(ch);
+			Integer count=m.get(c);
 			if(count==null) 
 			{
-				m.put(ch, 1);
+				m.put(c, 1);
 			}
 			else 
 			{
-				m.put(ch, ++count);
+				m.put(c, ++count);
 			}
 		}
 		Set<Entry<Character,Integer>> st=m.entrySet();
@@ -33,11 +34,42 @@ public class IndexOfFirstNonRepCharInAxting
 	            System.out.println(s.indexOf(entry.getKey()));
 				break;
 			}
+		
 			
 		}
 		
 
 	}
-	
 
 }
+
+
+//public class Test
+//
+////Index of first non repeating character in a string using linear search
+//{
+//	public static int findIndex(String s) 
+//	{
+//		char[] arr=s.toCharArray();
+//		char target='f';
+//		for(int i=0;i<arr.length;i++)
+//		{
+//			if(target==arr[i])
+//			{
+//				return i;
+//			}
+//		}
+//		return -1;
+//	}
+//	
+//	public static void main(String[] args)
+//	
+//	{
+//		
+//		String s ="geeksforgeeks";
+//		System.out.println(findIndex(s));
+//		
+//  }
+//  
+//}
+

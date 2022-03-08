@@ -18,7 +18,7 @@ public class SortArrayList {
 			{
 				if(lst.get(i)>lst.get(j)) 
 				{
-					int temp=lst.get(j);
+					Integer temp=lst.get(j);
 					lst.set(j, lst.get(i));
 					lst.set(i, temp);
 					
